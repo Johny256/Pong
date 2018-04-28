@@ -1,4 +1,4 @@
-package com.Eagle.game;
+package com.eagle256.game;
 import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.Rectangle;

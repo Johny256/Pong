@@ -1,4 +1,5 @@
 package com.eagle256.game;
+
 import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.Rectangle;
@@ -36,9 +37,11 @@ public class Ball {
 
 		if (collisionP1()) {
 			xa = 1;
+			Sound.BALL.play();
 			x = game.p1.getX() + DIAMETER;
 		} else if (collisionP2()) {
 			xa = -1;
+			Sound.BALL.play();
 			x = game.p2.getX() - DIAMETER;
 		}
 

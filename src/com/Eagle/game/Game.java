@@ -1,3 +1,5 @@
+package com.Eagle.game;
+
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
@@ -11,7 +13,7 @@ import javax.swing.JPanel;
 
 public class Game extends JPanel {
 
-	static final int WIDTH = 512, HEIGHT = 256;
+	public static final int WIDTH = 512, HEIGHT = 256;
 
 	public Paddle p1 = new Paddle(10, 90, this, 0);
 	public Paddle p2 = new Paddle(WIDTH - 20, 90, this, 0);
@@ -21,7 +23,7 @@ public class Game extends JPanel {
 		addKeyListener(new KeyListener() {
 			@Override
 			public void keyTyped(KeyEvent e) {
-
+				// empty method
 			}
 
 			@Override
@@ -66,10 +68,6 @@ public class Game extends JPanel {
 		p1.paint(g2d);
 		p2.paint(g2d);
 		ball.paint(g2d);
-
-	}
-
-	public void reset() {
 
 	}
 

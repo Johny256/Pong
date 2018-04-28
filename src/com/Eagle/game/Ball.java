@@ -1,3 +1,4 @@
+package com.Eagle.game;
 import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.Rectangle;
@@ -9,11 +10,11 @@ public class Ball {
 	private final int DIAMETER = 10;
 	private static int xa = -1, ya = 1;
 
+	private Game game;
+
 	public int getXa() {
 		return xa;
 	}
-
-	private Game game;
 
 	public Ball(int x, int y, Game g) {
 		this.game = g;
